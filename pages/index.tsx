@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import {Layout} from "@/components/layout";
+import {ScreenPusher} from "@/components/screen-pusher";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -8,6 +9,8 @@ export default function Home() {
   return (
     <Layout>
       <h1>Main</h1>
+      <div className={"min-h-screen"}>
+        <ScreenPusher />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, cumque deserunt fuga laudantium nesciunt, ducimus modi, rerum ad laborum ipsa fugit delectus. Consequuntur, maxime enim iste dolores distinctio ipsa unde?
         Maiores maxime facere suscipit libero sunt quae sed, odit similique ratione accusantium dicta possimus dolorum soluta deleniti aliquid sint saepe dignissimos commodi explicabo perspiciatis officia asperiores quas, velit aperiam! Commodi?
@@ -60,6 +63,7 @@ export default function Home() {
         Quam deleniti ullam molestias rem cum iure ipsum dolorum, dignissimos perspiciatis dolores aspernatur velit sed sapiente quas sequi reiciendis libero iste dolor exercitationem eum pariatur ratione? Corrupti officia nesciunt repellendus?
         Id nisi voluptas tempora commodi illo quibusdam ab saepe, nam dignissimos reprehenderit alias! Hic reprehenderit ratione impedit obcaecati ex exercitationem nesciunt non similique, beatae expedita recusandae nemo corrupti eveniet itaque!
       </p>
+      </div>
     </Layout>
   )
 }
